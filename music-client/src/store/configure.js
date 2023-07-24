@@ -1,6 +1,6 @@
 const configure = {
     state:{
-        HOST: 'http://127.0.0.1:8888',  //后台访问地址根目录
+      HOST: 'http://192.168.16.119:8888',  //后台访问地址根目录
         activeName: '',                  //当前选中的菜单名
         showAside: false,               //是否显示播放中的歌曲列表
         loginIn: false,                 //用户是否已登录
@@ -10,31 +10,31 @@ const configure = {
         activeName: state => {
             let activeName = state.activeName
             if(!activeName){
-                activeName = JSON.parse(window.sessionStorage.getItem('activeName')) 
+                activeName = JSON.parse(window.sessionStorage.getItem('activeName'))
             }
             return activeName
         },
         showAside: state => {
             let showAside = state.showAside
             if(!showAside){
-                showAside = JSON.parse(window.sessionStorage.getItem('showAside')) 
+                showAside = JSON.parse(window.sessionStorage.getItem('showAside'))
             }
             return showAside
         },
         loginIn: state => {
             let loginIn = state.loginIn
             if(!loginIn){
-                loginIn = JSON.parse(window.sessionStorage.getItem('loginIn')) 
+                loginIn = JSON.parse(window.sessionStorage.getItem('loginIn'))
             }
             return loginIn
         },
         isActive: state => {
             let isActive = state.isActive
             if(!isActive){
-                isActive = JSON.parse(window.sessionStorage.getItem('isActive')) 
+                isActive = JSON.parse(window.sessionStorage.getItem('isActive'))
             }
             return isActive
-        }        
+        }
     },
     mutations: {
         setActiveName: (state,activeName) => {
