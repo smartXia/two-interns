@@ -1,7 +1,7 @@
 <template>
 <div>
 <!--    <loginLogo/>-->
-  <img src="../../dist/static/img/background.jpg" class="background">
+  <img src="../assets/img/background.jpg" class="background">
     <div class="signUp">
         <div class="signUp-head">
             <span>帐号登录</span>
